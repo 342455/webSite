@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles/styleA.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container headerInside">
@@ -32,13 +31,13 @@
         </div>
     </header>
     <nav class="topNav">
-        <a href="">Home</a>
-        <a href="">Man</a>
-        <a href="">Women</a>
-        <a href="">Kids</a>
-        <a href="">Accoseriese</a>
-        <a href="">Featured</a>
-        <a href="">Hot Deals </a>
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Man</a>
+        <a href="womenSinglePage.html">Women</a>
+        <a href="catalog.html">Kids</a>
+        <a href="catalog.html">Accoseriese</a>
+        <a href="shoppingCart.html">Featured</a>
+        <a href="index.html">Hot Deals </a>
     </nav>
     <div class="topBannerWrap">
         <div class="container topBannerContent">
@@ -49,7 +48,7 @@
         </div>
     </div>
     <div class="container offers">
-        <div>
+        <div class="offerMan">
             <img src="images/offer1.jpg" alt="">
             <div class="label">
                 <div class="labelTop">
@@ -58,7 +57,7 @@
                 <div class="labelBottom">for men</div>
             </div>
         </div>
-        <div>
+        <div class="offerTrendys">
             <img src="images/offer2.jpg" alt="">
             <div class="label">
                 <div class="labelTop">
@@ -69,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="offerWomen">
             <img src="images/offer3.jpg" alt="">
             <div class="label">
                 <div class="labelTop">30% offer</div>
@@ -84,7 +83,8 @@
             </div>
         </div>
     </div>
-    <div class="container featuredItemsWrap">
+
+    <div class="container FeautItem">
         <div class="featuredHead">
             Fetured Items
         </div>
@@ -93,21 +93,21 @@
         </div>
         <div class="featuredItems">
             <div class="featuredItem">
-                <div class="featuredImgWrap">
-                    <div class="featuredBuy">
-                        <button>
-                            <img src="images/addToCart.png" alt="">
-                            Add to Cart
-                        </button>
+                    <div class="featuredImgWrap">
+                        <div class="featuredBuy">
+                            <button>
+                                <img src="images/addToCart.png" alt="">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <img class="featuredProduct" src="images/featuredItem1.jpg" alt="">
                     </div>
-                    <img class="featuredProduct" src="images/featuredItem1.jpg" alt="">
-                </div>
-                <div class="featuredNameAndPrice">
-                    <div class="featuredItemName">
-                        Mango People T-shirt
+                    <div class="featuredNameAndPrice">
+                        <div class="featuredItemName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="featuredItemPrice">$52.00</div>
                     </div>
-                    <div class="featuredItemPrice">$52.00</div>
-                </div>
             </div>
             <div class="featuredItem">
                 <div class="featuredImgWrap">
@@ -247,6 +247,7 @@
         </div>
         <div class="offerDetails">
             <div class="offerUnit">
+                <img src="images/offerDetails1.png" alt="">
                 <div class="offerDetailsHead">Free Delivery</div>
                 <div class="offerDetailsText">
                     Worldwide delivery on all. Authorit tively morph
@@ -254,6 +255,7 @@
                 </div>
             </div>
             <div class="offerUnit">
+                <img src="images/offerDetails2.png" alt="">
                 <div class="offerDetailsHead">Free Delivery</div>
                 <div class="offerDetailsText">
                     Worldwide delivery on all. Authorit tively morph
@@ -261,6 +263,7 @@
                 </div>
             </div>
             <div class="offerUnit">
+                <img src="images/offerDetails3.png" alt="">
                 <div class="offerDetailsHead">Free Delivery</div>
                 <div class="offerDetailsText">
                     Worldwide delivery on all. Authorit tively morph
@@ -303,7 +306,7 @@
                 <div class="subscribeRightText">
                     FOR OUR NEWLETTER AND PROMOTION
                 </div>
-                <form class="subscribeForm" action="subscribeForm">
+                <form class="subscribeForm" action="">
                     <input placeholder="Enter Your Email" type="text">
                     <button>Subscribe</button>
                 </form>
@@ -325,30 +328,36 @@
                 Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
             </div>
         </div>
-        <div class="footerColumn">
+        <section class="footerColumn">
             <h2>COMPANY</h2>
-            <a href="">Home</a>
-            <a href="">Shop</a>
-            <a href="">About</a>
-            <a href="">How It Works</a>
-            <a href="">Contact</a>
-        </div>
-        <div class="footerColumn">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Shop</a>
+                <a href="">About</a>
+                <a href="">How It Works</a>
+                <a href="">Contact</a>
+            </nav>
+        </section>
+        <section class="footerColumn">
             <h2>INFORMATION</h2>
-            <a href="">Tearms & Condition</a>
-            <a href="">Privacy Policy</a>
-            <a href="">How to Buy</a>
-            <a href="">How to Sell</a>
-            <a href="">Promotion</a>
-        </div>
-        <div class="footerColumn">
+            <nav>
+                <a href="">Tearms & Condition</a>
+                <a href="">Privacy Policy</a>
+                <a href="">How to Buy</a>
+                <a href="">How to Sell</a>
+                <a href="">Promotion</a>
+            </nav>
+        </section>
+        <section class="footerColumn">
             <h2>SHOP CATEGORY</h2>
-            <a href="">Men</a>
-            <a href="">Women</a>
-            <a href="">Child</a>
-            <a href="">Apparel</a>
-            <a href="">Browse All</a>
-        </div>
+            <nav>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Child</a>
+                <a href="">Apparel</a>
+                <a href="">Browse All</a>
+            </nav>
+        </section>
     </footer>
     <div class="copyrights">
         <div class="container copyrightsWrap">
@@ -364,6 +373,6 @@
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>
